@@ -1,3 +1,15 @@
+.whatsapp-link{
+  text-decoration: none; 
+}
+.whatsapp-button{
+  background-color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.whatsapp-link:hover{
+  color:green;
+}
+
 .footer-container {
     background-color: #242424;
     padding: 4rem 0 2rem 0;

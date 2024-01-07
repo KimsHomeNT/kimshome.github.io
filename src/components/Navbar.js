@@ -1,7 +1,7 @@
-import React, {useState,useEffect} from 'react'
+import React, {useState,useEffect, useRef} from 'react'
 import {Link} from 'react-router-dom'
 import { Button } from './Button';
-import './Navbar.css'
+import './Navbar.css';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -23,6 +23,24 @@ function Navbar() {
   },[]);
 
   window.addEventListener('resize',showButton);
+  function goToWhatsapp() {
+    window.location.href = "https://wa.me/+601120797329";};
+  
+  const sliderRef = useRef(null);
+  const scrollToSection = (sectionId) => {
+    const sectionRef = document.getElementById(sectionId);
+    if (sectionRef) {
+      const offset = -80;
+      const elementPosition = sectionRef.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition + offset;
+  
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    }
+  };
+
 
   return (
     <>
@@ -30,6 +48,7 @@ function Navbar() {
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             Kim's Home
+            <img className='kims-home-small-logo' src='/icons/white-kh-logo.png'/>
           </Link>
 
           <div className="menu-icon" onClick={handleClick}>
@@ -38,20 +57,14 @@ function Navbar() {
           
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className="nav-items">
-              <Link to="/" className="nav-links" onClick = {closeMobileMenu}>
+              <Link to="/" className="nav-links" onClick = {() => { closeMobileMenu(); scrollToSection('first-page'); }}>
                 Home
               </Link>
             </li>
 
             <li className="nav-items">
-              <Link to="/" className="nav-links" onClick = {closeMobileMenu}>
+            <Link to="" className="nav-links" onClick={() => { closeMobileMenu(); scrollToSection('image-slider'); }}>
                 Gallery
-              </Link>
-            </li>
-
-            <li className="nav-items">
-              <Link to="/" className="nav-links" onClick = {closeMobileMenu}>
-                Calender
               </Link>
             </li>
 
@@ -63,17 +76,17 @@ function Navbar() {
 
             <li>
               <Link
-                to='/sign-up'
+                to='https://wa.me/+601120797329'
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                Contact Us
+                <img class= 'whatsapp-logo' src={process.env.PUBLIC_URL + '/icons/whatsapp.png'}/>Contact Us
               </Link>
             </li>
 
           </ul>
-          {button && <Button buttonStyle='btn--outline'>
-            SIGN UP
+          {button && <Button onClick={goToWhatsapp} buttonStyle='btn--contactus'>
+            <img class= 'whatsapp-logo' src={process.env.PUBLIC_URL + '/icons/whatsapp.png'}/>Contacts Us
           </Button>}
         </div>
       </nav>

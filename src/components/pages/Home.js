@@ -1,14 +1,15 @@
 import React from 'react';
 import '../../App.css';
-// import Cards from '../Cards';
+import { SliderData } from '../SliderData';
 import HeroSection from '../HeroSection';
 import Footer from '../Footer';
+import MorePhoto from '../MorePhoto';
 
 function Home() {
   return (
     <>
       <HeroSection />
-      <HeroSection />
+      <MorePhoto slides={SliderData}/>
       <Footer />
     </>
   );

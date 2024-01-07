@@ -1,40 +1,48 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Footer.css';
 import { Button } from './Button';
-import { Link } from 'react-router-dom';
+import { Link  } from 'react-router-dom';
+
+
 
 function Footer() {
+  const [message, setMessage] = useState('');
+
+  const handleInputChange = (e) => {
+    setMessage(e.target.value);
+  };
+
   return (
-    <div className='footer-container'>
+    <div id='contact-us' className='footer-container'>
       <section className='footer-subscription'>
-        <p className='footer-subscription-heading'>
+        <h1 className='footer-subscription-heading'>
           Any Enquiry?
-        </p>
+        </h1>
         <p className='footer-subscription-text'>
-          Drop a message on our official WhatsApp
+          Welcome To Drop a Message To Our Official WhatsApp
         </p>
         <div className='input-areas'>
-          <form>
-            <input
-              className='footer-input'
-              name='message'
-              type='message'
-              placeholder='Your Message'
-            />
-            <Button buttonStyle='btn--outline'>
-                <img src={process.env.PUBLIC_URL + '/icons/whatsapp.png'}/>   WhatsApp Us
-                  </Button>
-          </form>
+          <input
+            className='footer-input'
+            name='message'
+            type='message'
+            placeholder='Your Message'
+            onChange={handleInputChange}
+          />
         </div>
+        <Link className='whatsapp-link' to={`https://wa.me/+601120797329?text=${encodeURIComponent(message + '(From Website)')}`}>
+              <button class='whatsapp-button'>
+                <img class= 'whatsapp-logo' src={process.env.PUBLIC_URL + '/icons/whatsapp.png'}/>WhatsApp Us
+              </button>
+        </Link>
       </section>
-
 
       <section class='social-media'>
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
               Kim's Home
-              <i class='fab fa-typo3' />
+              <img className='kims-home-small-logo' src='/icons/white-kh-logo.png'/>
             </Link>
           </div>
           <small class='website-rights'>Kim's Home © 2024</small>

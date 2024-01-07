@@ -29,6 +29,23 @@
     font-size: 20px;
 }
 
+.btn--contactus{
+    width: 11rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.whatsapp-button{
+    padding: 8px 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .btn--large{
     padding: 12px 26px;
     font-size: 20px;
@@ -40,8 +57,8 @@
     transition: all 0.3s ease-out;
 }
 
-img{
-    width: 20px;
-    height: 20px;
-    padding-top: 0.5px;
+.whatsapp-logo{
+    width:  1.5rem;
+    height: 1.5rem;
+    margin-right: 0.6rem;
 }
