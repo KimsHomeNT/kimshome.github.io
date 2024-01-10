@@ -22,7 +22,7 @@ function MainSection() {
     <div id='first-page' className='hero-container'>
       <video src='/videos/video-1.mp4' autoPlay loop muted />
       <h1>KIM'S HOME</h1>
-      <p>Your best choice for your stay in Nibong Tebal</p>
+      <p>Perfect choice for your stay in Nibong Tebal</p>
       <div className='hero-btns'>
         <Button
           className='btns'
@@ -36,7 +36,7 @@ function MainSection() {
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
-          onClick={() => scrollToSection('calender')}
+          onClick={() => scrollToSection('contact-us')}
         >
           Check Availability
         </Button>

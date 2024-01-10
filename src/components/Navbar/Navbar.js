@@ -70,7 +70,7 @@ function Navbar() {
 
             <li className="nav-items">
               <Link to="/" className="nav-links" onClick = {closeMobileMenu}>
-                Calender
+                Message Us
               </Link>
             </li>
 
