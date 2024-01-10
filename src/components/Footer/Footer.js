@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Footer.css';
-import { Button } from './Button';
+import { Button } from '../Button/Button';
 import { Link  } from 'react-router-dom';
 
 
@@ -50,7 +50,7 @@ function Footer() {
 
             <Link
               class='social-icon-link facebook'
-              to='/'
+              to='https://www.facebook.com/p/KIMS-HOME-100084184984393/'
               target='_blank'
               aria-label='Facebook'
             >
@@ -58,7 +58,7 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link instagram'
-              to='/'
+              to='https://www.instagram.com/kimshome_nibongtebal/'
               target='_blank'
               aria-label='Instagram'
             >
@@ -66,27 +66,27 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link airbnb'
-              to='/'
+              to='http://www.airbnb.com/rooms/691715553574322084'
               target='_blank'
               aria-label='Airbnb'
             >
               <i class="fa-brands fa-airbnb"></i>
             </Link>
             <Link
-              class='social-icon-link twitter'
-              to='/'
+              class='footer-small-logo'
+              to='https://www.agoda.com/kim-s-home-homey-at-your-stay/hotel/penang-my.html'
               target='_blank'
-              aria-label='Twitter'
+              aria-label='Agoda'
             >
-              <i class='fab fa-twitter' />
+              <img className='footer-small-logo' src='/icons/agoda.svg'/>
             </Link>
             <Link
               class='social-icon-link twitter'
-              to='/'
+              to='https://www.booking.com/hotel/my/kims-home-homey-at-your-stay.html'
               target='_blank'
-              aria-label='LinkedIn'
+              aria-label='Booking.com'
             >
-              <i class='fab fa-linkedin' />
+              <img className='footer-small-logo' src='/icons/booking.svg'/>
             </Link>
           </div>
         </div>

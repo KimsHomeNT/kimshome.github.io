@@ -22,18 +22,20 @@ const MorePhoto = ({slides}) => {
             <h1>More Photo</h1>
             <section className="slider">
                 <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide}/>
-                {SliderData.map((slide,index) =>{
-                    return (
-                        <>
-                            <div 
-                            className={index === current ? 'slide active' : 'slice'} 
-                            key={index}>
-                                {index === current &&
-                                (<img className='morephoto-img' src={slide.image} alt="slide image" />)}
-                            </div>
-                        </>
-                    )
-                })}
+                <div className='each-slide-wrapper'>
+                    {SliderData.map((slide,index) =>{
+                        return (
+                            <>
+                                <div 
+                                className={index === current ? 'slide active' : 'slice'} 
+                                key={index}>
+                                    {index === current &&
+                                    (<img className='morephoto-img' src={slide.image} alt="slide image" />)}
+                                </div>
+                            </>
+                        )
+                    })}
+                </div>
                 <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide}/>
             </section>
         </div>

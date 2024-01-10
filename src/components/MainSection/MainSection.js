@@ -1,9 +1,8 @@
 import React,{ useRef } from 'react';
-import '../App.css';
-import { Button } from './Button';
-import './HeroSection.css';
+import { Button } from '../Button/Button';
+import './MainSection.css';
 
-function HeroSection() {
+function MainSection() {
   const sliderRef = useRef(null);
   const scrollToSection = (sectionId) => {
     const sectionRef = document.getElementById(sectionId);
@@ -23,7 +22,7 @@ function HeroSection() {
     <div id='first-page' className='hero-container'>
       <video src='/videos/video-1.mp4' autoPlay loop muted />
       <h1>KIM'S HOME</h1>
-      <p>Your best choice</p>
+      <p>Your best choice for your stay in Nibong Tebal</p>
       <div className='hero-btns'>
         <Button
           className='btns'
@@ -46,4 +45,4 @@ function HeroSection() {
   );
 }
 
-export default HeroSection;
+export default MainSection;

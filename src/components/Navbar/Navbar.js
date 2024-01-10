@@ -1,6 +1,6 @@
 import React, {useState,useEffect, useRef} from 'react'
 import {Link} from 'react-router-dom'
-import { Button } from './Button';
+import { Button } from '../Button/Button';
 import './Navbar.css';
 
 function Navbar() {
@@ -47,8 +47,8 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <img className='kims-home-small-logo' src='/icons/white-kh-logo.png'/>
             Kim's Home
-            <img className='kims-home-small-logo' src='/icons/white-kh-logo.png'/>
           </Link>
 
           <div className="menu-icon" onClick={handleClick}>
@@ -94,4 +94,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Navbar;

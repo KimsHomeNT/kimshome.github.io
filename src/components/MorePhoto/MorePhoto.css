@@ -1,5 +1,7 @@
 .slider-wrapper{
-    min-height: 50vh;
+    min-height: 18vh;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
 }
 .slider-wrapper>h1{
     color: Black;
@@ -25,10 +27,15 @@
     align-items: center;
 }
 
+.each-slide-wrapper{
+    width:80%;
+    height:auto;
+}
+
 .right-arrow{
     position:absolute;
     top:50%;
-    right:10%;
+    right:2%;
     font-size: 3rem;
     color:black;
     z-index:10;
@@ -39,7 +46,7 @@
 .left-arrow{
     position:absolute;
     top:50%;
-    left:10%;
+    left:2%;
     font-size: 3rem;
     color:black;
     z-index:10;
@@ -56,5 +63,5 @@
 .slide.active{
     opacity: 1;
     transition-duration: 3s;
-    transform: scale(1.03);
+    transform: scale(1.05);
 }
