@@ -64,6 +64,10 @@
   height: 100%;
 }
 
+.long-width-nav-links{
+  min-width : 8rem;
+}
+
 .nav-links:hover {
   border-bottom: 4px solid #fff;
   transition: all 0.2s ease-out;

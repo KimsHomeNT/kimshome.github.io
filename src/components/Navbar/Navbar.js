@@ -69,7 +69,7 @@ function Navbar() {
             </li>
 
             <li className="nav-items">
-              <Link to="/" className="nav-links" onClick = {closeMobileMenu}>
+              <Link to="#contact-us" className="nav-links long-width-nav-links" onClick = {() => {closeMobileMenu(); scrollToSection('contact-us');}}>
                 Message Us
               </Link>
             </li>
