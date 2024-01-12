@@ -23,7 +23,7 @@ video {
   .hero-container {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('../../../public/images/img-1.jpeg') center center/cover no-repeat;
     width: 100%;
-    height: 28vh;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,17 +36,18 @@ video {
 
 .hero-container > h1 {
   color: #fff;
-  font-size: 100px;
+  font-size: 6rem;
   margin-top: -100px;
   text-shadow: 3px 3px 20px #000000;
   text-align: center;
   padding-top: 5rem;
+  padding-bottom:1rem;
 }
 
 .hero-container > p {
   margin-top: 8px;
   color: #fff;
-  font-size: 32px;
+  font-size: 2rem;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
   text-shadow: 3px 3px 20px #000000;
@@ -68,19 +69,19 @@ video {
   
   @media screen and (max-width: 960px) {
     .hero-container > h1 {
-      font-size: 70px;
+      font-size: 3.5rem;
       margin-top: -150px;
     }
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 600px) {
     .hero-container > h1 {
-      font-size: 50px;
+      font-size: 2.2rem;
       margin-top: -100px;
     }
   
     .hero-container > p {
-      font-size: 30px;
+      font-size: 1.5rem;
     }
   
     .btn-mobile {

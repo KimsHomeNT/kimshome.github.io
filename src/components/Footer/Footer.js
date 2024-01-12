@@ -38,7 +38,7 @@ function Footer() {
         </Link>
       </section>
 
-      <div className='google-map-div'>
+      <div id='location' className='google-map-div'>
             <h1>Our Location</h1>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.536752574561!2d100.46813577498246!3d5.177939594799509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ab1988a04e21d%3A0xcd6a594a7551c41f!2zS2ltJ3MgSG9tZSDnkLTkuYvlrrYgTmlib25nIFRlYmFsIEhvbWVzdGF5IOmrmOa4iuawkeWuvw!5e0!3m2!1sen!2smy!4v1705071156302!5m2!1sen!2smy" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>

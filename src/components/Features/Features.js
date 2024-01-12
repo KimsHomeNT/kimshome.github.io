@@ -1,29 +1,25 @@
 import React from 'react'
+import './Features.css';
 
 function Features() {
   return (
     <>
-      <h1>Our Services</h1>
-      <div>
-          <div>
-            4 Bedrooms
-          </div>
+      <div className='feature-wrapper'>
+        <h1>Why Kim's Home</h1>
+        <div className='each-feature-wrapper'>
+            <div className='Card right-pad'>
+              Strategic Location
+            </div>
 
-          <div>
-            Up to 12 Person
-          </div>
+            <div className='Card right-pad'>
+              Large Area
+            </div>
 
-          <div>
-            Wifi
-          </div>
+            <div className='Card'>
+              Equipped With Facilities
+            </div>
 
-          <div>
-            Auto Gate
-          </div>
-
-          <div>
-            Air-conditioner
-          </div>
+        </div>
       </div>
     </>
   )
