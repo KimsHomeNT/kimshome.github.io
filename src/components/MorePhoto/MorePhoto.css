@@ -28,7 +28,7 @@
 }
 
 .each-slide-wrapper{
-    width:80%;
+    width:88%;
     height:auto;
 }
 
@@ -63,5 +63,5 @@
 .slide.active{
     opacity: 1;
     transition-duration: 3s;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }

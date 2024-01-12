@@ -19,7 +19,7 @@ const MorePhoto = ({slides}) => {
 
     return (
         <div id='image-slider' name='image-slider' className='slider-wrapper'>
-            <h1>More Photo</h1>
+            <h1>Gallery</h1>
             <section className="slider">
                 <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide}/>
                 <div className='each-slide-wrapper'>

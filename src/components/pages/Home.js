@@ -4,11 +4,13 @@ import { SliderData } from '../MorePhoto/SliderData';
 import MainSection from '../MainSection/MainSection';
 import Footer from '../Footer/Footer';
 import MorePhoto from '../MorePhoto/MorePhoto';
+import Features from '../Features/Features';
 
 function Home() {
   return (
     <>
       <MainSection />
+      {/* <Features /> */}
       <MorePhoto slides={SliderData}/>
       <Footer />
     </>
