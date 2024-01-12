@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     width : 100%;
-    background-color:#636363; 
+    background-color:#242424;
     position: relative;
     overflow:hidden;
 	color:white
@@ -93,7 +93,62 @@
     margin-right: 8vw;
 }
 
-@media only screen and (max-width: 600px) {
+
+
+.each-feature-detail-wrapper {
+	font-size: 1.2rem;
+	margin-top: 3rem;
+	position: relative;
+	background-color: rgb(255, 182, 182);
+	width: 90%;
+	height:32vw;
+	text-align: center;
+	color: black;
+	padding: 2rem;
+	/* Add default border-radius */
+	border-radius: 15px;
+	transition: border-radius 0.8s ease-out; /* Add transition property */	
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+}
+
+.each-feature-detail-wrapper.card1 {
+	/* Add specific border-radius for the first card */
+	border-radius: 15px 50px;
+}
+
+.each-feature-detail-wrapper.card3 {
+	/* Add specific border-radius for the third card */
+	border-radius: 50px 15px;
+}
+
+.each-feature-detail ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+.Card:hover,
+.Card.selected {
+  background-color: rgba(255, 201, 201, 0.8);
+  color: #fff;
+}
+
+.Card:hover:after,
+.Card.selected:after {
+  background-color: rgba(255, 131, 131, 0.7);
+}
+
+.Card:hover:before,
+.Card.selected:before {
+  background-color: rgba(255, 138, 138, 0.3);
+}
+
+
+@media only screen and (max-width: 700px) {
 	.Card{
 		position:relative;
 		text-align:center;
@@ -113,6 +168,11 @@
 	}
 	.right-pad{
 		margin-right: 5vw;
+	}
+
+	.each-feature-detail-wrapper {
+		font-size: 0.9rem;
+		height:100vw;
 	}
 	
   }
