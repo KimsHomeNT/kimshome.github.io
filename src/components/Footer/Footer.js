@@ -51,7 +51,7 @@ function Footer() {
               <img className='kims-home-small-logo' src='/icons/white-kh-logo.png'/>
             </Link>
           </div>
-          <small class='website-rights'>Kim's Home © 2024</small>
+          <p class='website-rights'>Kim's Home © 2024</p>
           <div class='social-icons'>
 
             <Link

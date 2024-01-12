@@ -23,7 +23,7 @@ video {
   .hero-container {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('../../../public/images/img-1.jpeg') center center/cover no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 28vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

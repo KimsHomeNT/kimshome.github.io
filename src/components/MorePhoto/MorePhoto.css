@@ -1,14 +1,14 @@
 .slider-wrapper{
     min-height: 18vh;
-    margin-bottom: 5rem;
-    margin-top: 5rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 .slider-wrapper>h1{
     color: Black;
     font-size: 50px;
     text-shadow: 3px 3px 20px #ffffff;
     text-align: center;
-    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 .morephoto-img {
@@ -28,7 +28,7 @@
 }
 
 .each-slide-wrapper{
-    width:88%;
+    width:80%;
     height:auto;
 }
 
