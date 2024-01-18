@@ -75,7 +75,7 @@ return (
           </div>
         ))}
       </div>
-      {selectedCard !== null && (
+      {/* {selectedCard !== null && (
         <div
           className={`each-feature-detail-wrapper card${selectedCard + 1}`}
         >
@@ -87,7 +87,7 @@ return (
             </ul>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   </>
 );
