@@ -20,7 +20,7 @@ function MainSection() {
   return (
 
     <div id='first-page' className='hero-container'>
-      <video src='/videos/video-1.mp4' autoPlay loop muted />
+      {/* <video src='/videos/video-1.mp4' autoPlay loop muted /> */}
       <h1>KIM'S HOME</h1>
       <p>Your Perfect HomeStay At Nibong Tebal</p>
       <div className='hero-btns'>
